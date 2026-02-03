@@ -1,3 +1,10 @@
+/**
+ * Copyright (c) 2026 Nicholas Waltz
+ * https://nicholaswaltz.com
+ *
+ * lib/mp4box.d.ts
+ */
+
 export interface MP4MediaTrackEdit {
   media_rate_fraction: number;
   media_rate_integer: number;
