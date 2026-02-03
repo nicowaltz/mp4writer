@@ -167,7 +167,6 @@ export class MP4PushMuxerEncoder {
   }
 
   async multiplexToBuffer(): Promise<MP4ArrayBuffer> {
-    this.throwIfEncoderError();
     try {
       await this.audioEncoder.flush();
       await this.videoEncoder.flush();
@@ -175,7 +174,9 @@ export class MP4PushMuxerEncoder {
       this.closeEncoders();
       throw e;
     }
+
     this.throwIfEncoderError();
+
     if (this.videoSamples.length === 0) throw new Error("Write failed: No video samples to write.");
 
     this.mp4box = MP4Box.createFile();
