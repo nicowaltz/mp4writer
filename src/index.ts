@@ -1,6 +1,5 @@
 /**
  * Copyright (c) 2026 Nicholas Waltz
- * https://nicholaswaltz.com
  *
  * index.ts
  */
