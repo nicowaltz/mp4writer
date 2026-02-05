@@ -1,8 +1,6 @@
 {
   "name": "mp4writer",
   "author": "Nicholas Waltz",
-  "email": "nico@nicholaswaltz.com",
-  "url": "https://nicholaswaltz.com",
   "homepage": "https://github.com/nicowaltz/mp4writer",
   "version": "0.1.0",
   "description": "Browser-based MP4 muxer and demuxer using WebCodecs and mp4box.js",

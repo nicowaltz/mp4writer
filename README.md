@@ -148,4 +148,4 @@ Requires the [WebCodecs API](https://developer.mozilla.org/en-US/docs/Web/API/We
 
 ## Licence
 
-[MIT](./LICENCE.md) — Nicholas Waltz — [nicholaswaltz.com](https://nicholaswaltz.com)
+[MIT](./LICENCE.md) — Nicholas Waltz
