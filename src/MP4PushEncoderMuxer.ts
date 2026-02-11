@@ -4,11 +4,11 @@
  * MP4PushEncoderMuxer.ts
  */
 
-import { MP4Box, MP4File, BoxParser, MP4BoxStream, DataStream, MP4ArrayBuffer } from "./lib/mp4box";
-import { isConfigured } from "./promisifyWebCodecs";
-import { msToSec, secToMs, usToSec, secToUs } from "./time";
+import { MP4Box, MP4File, BoxParser, MP4BoxStream, DataStream, MP4ArrayBuffer } from "./lib/mp4box.js";
+import { isConfigured } from "./promisifyWebCodecs.js";
+import { msToSec, secToMs, usToSec, secToUs } from "./time.js";
 
-import "./setupOpusBoxParser";
+import "./setupOpusBoxParser.js";
 
 const DEFAULT_COMPATIBLE_BRANDS = ["mp42", "isom", "iso2", "iso5", "avc1", "mp41"];
 

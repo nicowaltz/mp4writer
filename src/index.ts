@@ -4,12 +4,12 @@
  * index.ts
  */
 
-export { MP4PushMuxerEncoder } from "./MP4PushEncoderMuxer";
-export type { MP4PushMuxerEncoderConfig } from "./MP4PushEncoderMuxer";
-export { MP4PullDemuxer } from "./MP4PullDemuxer";
-export type { IndexedMP4Sample, SeekReturn } from "./MP4PullDemuxer";
-export { isConfigured } from "./promisifyWebCodecs";
-export { secToMs, msToSec, secToUs, usToSec } from "./time";
+export { MP4PushMuxerEncoder } from "./MP4PushEncoderMuxer.js";
+export type { MP4PushMuxerEncoderConfig } from "./MP4PushEncoderMuxer.js";
+export { MP4PullDemuxer } from "./MP4PullDemuxer.js";
+export type { IndexedMP4Sample, SeekReturn } from "./MP4PullDemuxer.js";
+export { isConfigured } from "./promisifyWebCodecs.js";
+export { secToMs, msToSec, secToUs, usToSec } from "./time.js";
 export type {
   MP4ArrayBuffer,
   MP4Sample,
@@ -19,4 +19,4 @@ export type {
   MP4File,
   Trak,
   DataStream,
-} from "./lib/mp4box";
+} from "./lib/mp4box.js";

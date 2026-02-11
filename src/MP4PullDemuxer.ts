@@ -4,8 +4,8 @@
  * MP4PullDemuxer.ts
  */
 
-import { MP4Box, Trak, MP4Sample, MP4File, MP4Info, MP4VideoTrack, MP4ArrayBuffer, DataStream } from "./lib/mp4box";
-import { secToMs } from "./time";
+import { MP4Box, Trak, MP4Sample, MP4File, MP4Info, MP4VideoTrack, MP4ArrayBuffer, DataStream } from "./lib/mp4box.js";
+import { secToMs } from "./time.js";
 
 const MIN_DECODER_QUEUE_SIZE = 20;
 

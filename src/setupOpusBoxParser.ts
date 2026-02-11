@@ -4,9 +4,9 @@
  * setupOpusBoxParser.ts
  */
 
-import { BoxParser } from "./lib/mp4box";
+import { BoxParser } from "./lib/mp4box.js";
 
-declare module "./lib/mp4box" {
+declare module "./lib/mp4box.js" {
   namespace BoxParser {
     export class dOpsBox extends ContainerBox {
       Version: number;
