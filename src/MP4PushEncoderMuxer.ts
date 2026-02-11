@@ -152,6 +152,10 @@ export class MP4PushMuxerEncoder {
     });
   }
 
+  private throwIfEncoderError() {
+    if (this._encoderError) throw this._encoderError;
+  }
+
   /**
    * Flushes both encoders and assembles all collected samples into a complete
    * MP4 file buffer. Must be called after all video frames and audio data have
@@ -161,10 +165,6 @@ export class MP4PushMuxerEncoder {
    * @returns A complete MP4 file as an {@link MP4ArrayBuffer}.
    * @throws If no video samples have been encoded.
    */
-  private throwIfEncoderError() {
-    if (this._encoderError) throw this._encoderError;
-  }
-
   async multiplexToBuffer(): Promise<MP4ArrayBuffer> {
     try {
       await this.audioEncoder.flush();
